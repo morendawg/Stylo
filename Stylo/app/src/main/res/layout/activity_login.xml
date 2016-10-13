@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="hwk2.cis350.upenn.edu.stylo.LoginActivity"
+    android:backgroundTintMode="screen"
+    android:alpha="1"
+    android:background="#000000"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center|bottom|clip_vertical"
+    android:padding="-10dp"
+    android:paddingLeft="-10dp"
+    android:paddingTop="-10dp"
+    android:paddingRight="-10dp"
+    android:paddingBottom="-10dp"
+    android:fontFamily="sans-serif-thin">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/login"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha='0.8'
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:padding="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stylo allows you to manage your wardrobe, get outfit feedback from your friends and discover global fashion trends."
+        android:id="@+id/stylo_description"
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="83dp"
+        android:padding="10dp"
+        android:focusable="false" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/menu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="proceed"
+        android:nestedScrollingEnabled="false" />
+
+</RelativeLayout>
